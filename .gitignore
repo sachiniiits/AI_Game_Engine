@@ -1,0 +1,11 @@
+.env
+__pycache__/
+*.pyc
+output/
+build/
+v1_archive/
+assets/
+src/main.py
+implementation_plan_1.md
+ROADMAP_version_2.md
+test_gemini.py
