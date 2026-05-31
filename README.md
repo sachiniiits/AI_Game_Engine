@@ -1,31 +1,36 @@
 # AI Game Engine (V2 Pipeline) 🚀
 
-Welcome to the **AI Game Engine**, a state-of-the-art Multi-Agent system that autonomously researches, designs, codes, and validates complete web-based games from a single text prompt. 
+<div align="center">
+  <video src="Game_EngineII_demo_final.mp4" width="800" controls autoplay loop muted></video>
+</div>
 
-Our current project introduces the **V2 Pipeline**—a major evolutionary leap from basic code generation. We have transformed the architecture into a multi-phase, agent-driven workflow that guarantees robust, playable, and complex Phaser.js games.
+Single-prompt code generation is a bottleneck. If you want an LLM to generate a complex web game, a single API call just isn't going to cut it. It usually results in a broken, hallucinated block of code.
 
-## ✨ What We Have Built
+To solve this, I built the **Autonomous Multi-Agent Game Engine** targeting HTML5 and Phaser.js. 
 
-Instead of relying on a single LLM call to write code, we orchestrate a **5-Agent Assembly Line**:
-1. **🔍 Research Agent**: Analyzes the game concept, gathering mechanics, physics, and gameplay patterns.
-2. **📝 Script Agent**: Acts as the Game Designer, formulating a detailed blueprint and rule set based on the research.
-3. **🧠 Logic Agent**: Breaks down the game design into precise pseudocode and a concrete draw manifest for visual assets.
-4. **💻 Coding Agent**: Leverages powerful reasoning to compile the logic and design into a complete, standalone Phaser.js HTML game.
-5. **🛡️ Validator Agent**: Inspects the final code for syntax errors, missing assets, and Phaser API compliance. If it finds issues, it automatically bounces the code back to the Coding Agent with specific feedback (up to 3 retries).
+After experimenting with 2D engines like Pyxel, I pivoted to Phaser.js for its robust community and web-native ecosystem. Then, I mapped out a traditional game development lifecycle and translated it into a parallel, agentic workflow. 
 
-## 🌟 What Makes This Novel?
+Welcome to the **V2 Pipeline**—a major evolutionary leap from basic code generation. We have transformed the architecture into a multi-phase, self-correcting workflow that guarantees robust, playable, and complex web games from a single text prompt.
 
-- **The Self-Correcting Loop**: Most AI code generators fail silently on complex game loops. Our Validator Agent tests the output and forces the Coding Agent to self-correct *before* the user ever sees the result.
-- **Separation of Concerns**: By splitting "thinking about design" from "writing syntax," the AI doesn't hallucinate features while writing code. The Logic and Script agents act as a safety net.
-- **Single-File Output**: The engine bundles all assets (using procedural generation, shapes, or data URIs) and logic into a single `game.html` file that runs instantly in any modern browser without a local server.
+## ⚙️ The Architecture: An Autonomous Assembly Line
 
-## 🚀 The Power of Reasoning Models
+By separating the "thinking about design" from the "writing of syntax," hallucination drops drastically. The system orchestrates 5 distinct AI specialists working together:
 
-This engine reaches its full potential when powered by high-intelligence reasoning models (such as **Gemini 2.5 Flash/Pro with extended thinking budgets**). 
-Why does reasoning matter here?
-- **Spatial Awareness**: Game development requires mapping 2D coordinates, collision boxes, and velocity vectors. Extended thinking allows the model to map these mathematically before generating code.
-- **Deep Context Synthesis**: The Coding Agent must hold the Research Report, Game Design, Pseudocode, and Draw Manifest all in its active memory. High-tier reasoning models can cross-reference these documents flawlessly to produce accurate code.
-- **Self-Correction**: When the Validator Agent provides failure feedback, reasoning models can precisely pinpoint the structural logic flaw rather than blindly rewriting the file.
+1. 🔍 **Research Agent:** Establishes context, mechanics, and game tropes before a single line of code is written.
+2. 📝 **Script Agent (The Designer):** Formulates a detailed blueprint and rule set based on the research.
+3. 🧠 **Logic Agent (The Architect):** Handles spatial reasoning, mathematics, and visual constraints, outputting precise pseudocode and a visual draw manifest.
+4. 💻 **Coding Agent (The Developer):** Compiles the context into functional, executable JavaScript using the Phaser.js framework.
+5. 🛡️ **Validator Agent (The QA Tester):** An autonomous QA loop that acts as a safety net. It catches syntax errors, missing assets, and API misuse, forcing self-correction from the Coding Agent up to 3 times.
+
+The Validator Agent ensures the final output is a completely self-contained, playable `game.html` file that runs instantly in any modern browser without a local server.
+
+## 🚀 The Challenge: Scaling with Reasoning Models
+
+The biggest challenge right now is extracting maximum reasoning capability while staying under the rate limits of free-tier models. The Coding Agent must hold the Research Report, Game Design, Pseudocode, and Draw Manifest all in its active memory. 
+
+This engine reaches its full potential when powered by high-intelligence, frontier reasoning models (such as **Gemini 2.5 Flash/Pro with extended thinking budgets**). The architecture is proving that multi-agent orchestration is the future of complex code generation.
+
+---
 
 ## 🛠️ How to Use It Efficiently
 
