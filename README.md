@@ -2,10 +2,6 @@
 
 # AI Game Engine (V2 Pipeline) 🚀
 
-<div align="center">
-  <video src="Game_EngineII_demo_final.mp4" width="800" controls autoplay loop muted></video>
-</div>
-
 Single-prompt code generation is a bottleneck. If you want an LLM to generate a complex web game, a single API call just isn't going to cut it. It usually results in a broken, hallucinated block of code.
 
 To solve this, I built the **Autonomous Multi-Agent Game Engine** targeting HTML5 and Phaser.js. 
